@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Aya Lubbad's Personal Website">
+    <link rel="stylesheet" href="styles.css">
+    <author>Aya Lubbad</author>
+    <title>Aya Lubbad</title>
+</head>
+<body>
+    <h1 style = "color:chocolate;">Aya Lubbad</h1>
+    <div class = "full page" style = " display: flex; flex-direction: column;">
+        <div class = "intro" style = "display: flex; flex-direction: row; margin:20px;">
+            <div><h2>About</h2>
+            <h3>Hello! My name is Aya Lubbad.</h3>
+            <h3>I am a freshman studying Electrical Engineering and Computer Science at UC Berkeley.</h3></div>
+            <div class = "picture" style = "float:right; width: 45%";>
+            <img id = "me" src = "mypic.jpg" alt = "My Picture"/>
+            </div>
+        </div>
+        <div class = "projects">
+            <div class = "grid-item"> 
+                <div class ="project">
+                    <div style ="border: 1px solid white;"><h4>Project 1</h4>
+                    <h5>Project Management App</h5></div>
+                        <div style ="border: 1px solid white;"><h6>Project Desciption: I coded an app using Java that manages different projects and keeps track of tasks, employees, and deadlines</h6></div>
+                </div>
+            </div>
+            <div class = "grid-item"> 
+                    <div class ="project">
+                        <div style ="border: 1px solid white;"><h4>Project 2</h4>
+                            <h5>Personal Website</h5>
+                        </div>
+                        <div style ="border: 1px solid white;"><h6>Project Description: Created a personal website as an assignment for this decal</h6></div>
+                    </div>
+                    </div>
+            <div class = "grid-item"> 
+                    <div class = "project">
+                        <div style ="border: 1px solid white;">
+                            <h4>Clubs</h4>
+                            <h5>United Nations Association at Berkeley</h5>
+                        </div>
+                        <div style ="border: 1px solid white;"><h6>I am currently in the climate action committee in the UNAB club at UC Berkeley.</h6></div>
+                    </div>
+                </div>
+        <div>
+            <button onclick="showThis()" style="background-color:white;color:black;">Contact me</button>
+            <div id="sectionName" style ="display:none; color:black;">
+                <a target="_blank" href="https://www.linkedin.com/in/aya-lubbad-aa774224a/">Linkedin</a>
+                <p style = "text-decoration-line:underline; color: black ;">Email: alubbad@berkeley.edu</p>
+                <a target="_blank" href="https://www.instagram.com/ayalubbad04/?hl=en">Instagram</a>
+            </div>
+            <script>
+                function showThis(){
+                    document.getElementById("sectionName").style.display="block";
+                }
+            </script>
+        </div>
+
+        <div id="wrapper"style ="color:black;background-color:white;">
+            <h4>What's your name?</h4>
+            <label style="font-family: sans-serif; font-size:medium;">Name:</label>
+            <input type="text" id="name" style="">
+            <input type ="submit" onclick="print()">
+        </div>
+        <script>
+            function print(){
+                alert("Thank you for viewing my page!");
+            }
+        </script>
+
+    </div>
+    
+</body>
+</html>
